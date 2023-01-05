@@ -8,7 +8,7 @@ description: A showcasing of Brendan's engineering skills
   I am a Mechanical Engineering Technologist currently attending the University of Calgary to further my engineering education. More specifcally, I have interests in mechanical, electrical, and software engineering so below are my best projects related to these fields. 
   
   Thank you for spending time on my webpage!
-![ProfilePicture](https://github.com/b-smiley/b-smiley.github.io/edit/main/images/Profile Picture.jpg)
+![ProfilePicture](https://github.com/b-smiley/b-smiley.github.io/edit/main/images/ProfilePicture.jpg)
 
 [List of Skills](./SkillsList.html)
 
