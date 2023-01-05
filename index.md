@@ -3,6 +3,7 @@ layout: default
 title: Brendan Smiley's Portfolio
 description: A showcasing of Brendan's engineering skills
 ---
+_includes/head-custom-google-analytics.html
 ## About Me
 * * *
   I am a Mechanical Engineering Technologist currently attending the University of Calgary to further my engineering education. More specifcally, I have interests in mechanical, electrical, and software engineering so below are my best projects related to these fields. 
