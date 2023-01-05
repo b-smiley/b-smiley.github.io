@@ -1,4 +1,4 @@
-# Brendan Smiley's Portfolio
+
 ## Software Development Projects
   - Automated System that checks for new company sales and delivers the customer their purchased files
   - Fusion 360 API 2D Sketch importer
