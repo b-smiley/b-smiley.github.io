@@ -2,7 +2,7 @@
 layout: default
 title: Brendan Smiley's Portfolio
 description: A showcasing of Brendan's engineering skills
-google_analytics: G-7FDZEX15WM
+google_analytics: G-LJTYY17LYN
 ---
 
 ## About Me
