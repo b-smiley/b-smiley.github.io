@@ -15,9 +15,11 @@ description: A showcasing of Brendan's engineering skills
 
 ## Software Development Projects
 * * *
-  - Automated System that checks for new company sales and delivers the customer their purchased files
-  - Fusion 360 API 2D Sketch importer
-  - Python Games
+  - Automated System that checks for new company sales and delivers the customer their purchased files.
+  - VBA Excel Data Extraction tool for a customer.
+  - Fusion 360 API 2D Sketch importer.
+  - Python Zombie Survival Game.
+  - Sudoko Solver
 
 ## Mechanical Engineering Projects
 * * *
@@ -25,3 +27,7 @@ description: A showcasing of Brendan's engineering skills
   - Custom 3-D Printed Wall Mounts
   - Vibration Plate For Product Testing
   - 3-D Printed Conference Camera Mount
+
+
+https://user-images.githubusercontent.com/66867383/210745202-35aea7cf-a66c-48c1-9c34-ed403226fd8d.mp4
+
