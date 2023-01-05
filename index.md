@@ -13,7 +13,7 @@
 ## My Skills
 
   * ### Software Skills
-    * Programming Languages in order of most experience:
+    * ####Programming Languages in order of most experience
           *   Python
           *   JavaScript
           *   C#
@@ -25,7 +25,7 @@
     * Creating scheduled tasks on servers.
     * Arduino Applications
   * ### Mechanical Engineering Skills
-    * CAD Softwares in order of most experience:
+    * ####CAD Softwares in order of most experience
           * SolidWorks (CAD design, Simulations, Drawings)
           * Fusion 360
           * VX Elements/Model
