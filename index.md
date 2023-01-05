@@ -2,7 +2,6 @@
 layout: default
 title: Brendan Smiley's Portfolio
 description: A showcasing of Brendan's engineering skills
-_includes/head-custom-google-analytics.html
 ---
 
 ## About Me
