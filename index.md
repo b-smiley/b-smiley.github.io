@@ -13,10 +13,11 @@
 ## My Skills
 
   * ### Software Skills
-    * #### Programming Languages in order of most experience
+    * Programming Languages in order of most experience
           *  Python
           *  JavaScript
           *  C#
+          *  LabVIEW
           *  VBA (Visual Basic for Application)
           *  Arduino C
           *  HTML,CSS (Markup Languages)
@@ -25,8 +26,15 @@
     * Creating scheduled tasks on servers.
     * Arduino Applications
   * ### Mechanical Engineering Skills
-    * #### CAD Softwares in order of most experience
+    * CAD Softwares in order of most experience
           * SolidWorks (CAD design, Simulations, Drawings)
           * Fusion 360
           * VX Elements/Model
-          * Geomagic Design X
+          * Geomagic Design Xmach/
+    * 3D printing
+    * Shop skills
+          * Hydraulic and Fluid Power Systems - SAIT
+          * Welding (Oxyacetylene,MIG,Arc) - Highschool
+          * Lathe - SAIT
+          * Drill Press - SAIT
+          * Automatics - Highschool/Self Taught
