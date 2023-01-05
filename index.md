@@ -13,7 +13,6 @@
 &nbsp;
   
 ## My Skills
-&nbsp;
   - ### Software Skills
     - Programming Languages in order of most experience
         - Python
