@@ -16,13 +16,13 @@
 &nbsp;
   - ### Software Skills
     - Programming Languages in order of most experience
-        >           -  Python
-        >           -  JavaScript
-        >           -  C#
-        >           -  LabVIEW
-        >           -  VBA (Visual Basic for Application)
-        >           -  Arduino C
-        >           -  HTML,CSS (Markup Languages)
+        - Python
+        - JavaScript
+        - C#
+        - LabVIEW
+        - VBA (Visual Basic for Application)
+        - Arduino C
+        - HTML,CSS (Markup Languages)
     - Comfortable with Windows and Linux Terminals.
     - Creating executable scripts.
     - Creating scheduled tasks on servers.
@@ -31,10 +31,10 @@
 &nbsp;
   - ### Mechanical Engineering Skills
     - CAD Softwares in order of most experience
-        >           - SolidWorks (CAD design, Simulations, Drawings)
-        >           - Fusion 360
-        >           - VX Elements/Model
-        >           - Geomagic Design X
+      - SolidWorks (CAD design, Simulations, Drawings)
+      - Fusion 360
+      - VX Elements/Model
+      - Geomagic Design X
     - 3D printing
     - Shop skills
            - Hydraulic and Fluid Power Systems - SAIT
