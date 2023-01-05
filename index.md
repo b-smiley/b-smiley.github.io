@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Brendan Smiley's Portfolio
+description: A showcasing of Brendan's engineering skills
 ---
 ## About Me
 * * *
