@@ -11,7 +11,7 @@ description: A showcasing of Brendan's engineering skills
   
   ![ProfilePicture](https://raw.githubusercontent.com/b-smiley/b-smiley.github.io/main/images/ProfilePicture.jpg)
 
-[List of Skills](./SkillsList.html)
+## [List of Skills](./SkillsList.html)
 
 ## Software Development Projects
 * * *
