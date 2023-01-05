@@ -25,7 +25,7 @@ description: A showcasing of Brendan's engineering skills
 * * *
   - Stirling Engine
   
-    Two of my SAIT course was dedicated to this Stirling Engine. 
+    Two of my SAIT courses was dedicated to this Stirling Engine. 
     The first class was to create the CAD model for the engine, while the other class was to fabricate it. 
     More specifically, we fabricated the Stirling Engine using lathes and mills.
     
@@ -49,6 +49,6 @@ Note: Standard design for machined products is to polish the surface and have fi
     
   - 3-D Printed Conference Camera Mount
 
-I was assigned with the design and creation of a camera mount for a Logitech camera that was getting used for conference calls. The problem was that the provided Logitech mount did not work on the bottom of TVs, which is how the company wanted to use it. However, the Logitech mount had good rotational features, so I made a secondary mount to support the Logitech mount. In a future design, I would add cable management to the model. 
+    I was assigned with the design and creation of a camera mount for a Logitech camera that was getting used for conference calls. The problem was that the provided Logitech mount did not work on the bottom of TVs, which is how the company wanted to use it. However, the Logitech mount had good rotational features, so I made a secondary mount to support the Logitech mount. In a future design, I would add cable management to the model. 
 
     ![CameraMount](https://raw.githubusercontent.com/b-smiley/b-smiley.github.io/main/images/CameraMount.jpg)
