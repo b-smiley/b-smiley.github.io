@@ -24,10 +24,17 @@ description: A showcasing of Brendan's engineering skills
 ## Mechanical Engineering Projects
 * * *
   - Stirling Engine
+  
+    ![StirlingEngine](https://raw.githubusercontent.com/b-smiley/b-smiley.github.io/main/images/StirlingEngine.png)
+    
   - Custom 3-D Printed Wall Mounts
+  
+    ![WallMounts](https://raw.githubusercontent.com/b-smiley/b-smiley.github.io/main/images/WallMount.jpg)
+    
   - Vibration Plate For Product Testing
+  
+    ![VibrationPlate](https://raw.githubusercontent.com/b-smiley/b-smiley.github.io/main/images/VibrationPlate.jpg)
+    
   - 3-D Printed Conference Camera Mount
 
-
-https://user-images.githubusercontent.com/66867383/210745202-35aea7cf-a66c-48c1-9c34-ed403226fd8d.mp4
-
+    ![CameraMount](https://raw.githubusercontent.com/b-smiley/b-smiley.github.io/main/images/CameraMount.jpg)
