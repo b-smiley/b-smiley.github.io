@@ -9,7 +9,7 @@ description: A showcasing of Brendan's engineering skills
   
   Thank you for spending time on my webpage!
   
-  ![ProfilePicture](https://github.com/b-smiley/b-smiley.github.io/edit/main/images/ProfilePicture.jpg?raw=true)
+  ![ProfilePicture](https://raw.githubusercontent.com/b-smiley/b-smiley.github.io/main/images/ProfilePicture.jpg)
 
 [List of Skills](./SkillsList.html)
 
