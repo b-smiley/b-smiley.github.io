@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 ## Software Development Projects
   - Automated System that checks for new company sales and delivers the customer their purchased files
