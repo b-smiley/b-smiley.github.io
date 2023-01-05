@@ -2,6 +2,8 @@
 layout: default
 ---
 
+[Link to another page](./another-page.html)
+
 ## Software Development Projects
   - Automated System that checks for new company sales and delivers the customer their purchased files
   - Fusion 360 API 2D Sketch importer
