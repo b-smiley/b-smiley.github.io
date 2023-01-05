@@ -13,19 +13,19 @@
 ## My Skills
 
   * ### Software Skills
-    * ####Programming Languages in order of most experience
-          *   Python
-          *   JavaScript
-          *   C#
-          *   VBA (Visual Basic for Application)
-          *   Arduino C
-          *   HTML,CSS (Markup Languages)
+    * #### Programming Languages in order of most experience
+          *  Python
+          *  JavaScript
+          *  C#
+          *  VBA (Visual Basic for Application)
+          *  Arduino C
+          *  HTML,CSS (Markup Languages)
     * Comfortable with Windows and Linux Terminals.
     * Creating executable scripts.
     * Creating scheduled tasks on servers.
     * Arduino Applications
   * ### Mechanical Engineering Skills
-    * ####CAD Softwares in order of most experience
+    * #### CAD Softwares in order of most experience
           * SolidWorks (CAD design, Simulations, Drawings)
           * Fusion 360
           * VX Elements/Model
