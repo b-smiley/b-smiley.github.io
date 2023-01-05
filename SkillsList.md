@@ -3,7 +3,7 @@ layout: default
 title: Brendan Smiley's Portfolio
 description: A showcasing of Brendan's engineering skills
 ---
-[back](./)
+
 
 ## List of Brendan's Skills
   - ### Software Skills
@@ -35,4 +35,4 @@ description: A showcasing of Brendan's engineering skills
          - Drill Press
          - Automatics
 
-
+[back](./)
