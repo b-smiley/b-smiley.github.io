@@ -2,22 +2,19 @@
 layout: default
 ---
 
-[Link to another page](./another-page.html)
+[List of Skills](./SkillsList.html)
 
 ## Software Development Projects
   - Automated System that checks for new company sales and delivers the customer their purchased files
   - Fusion 360 API 2D Sketch importer
   - Python Games
 
-&nbsp;
 ## Mechanical Engineering Projects
   - Stirling Engine
   - Custom 3-D Printed Wall Mounts
   - Vibration Plate For Product Testing
   - 3-D Printed Conference Camera Mount
-
-&nbsp;
-  
+ 
 ## My Skills
   - ### Software Skills
     - Programming Languages in order of most experience
@@ -42,8 +39,8 @@ layout: default
       - Geomagic Design X
     - 3D printing
     - Shop skills
-           - Hydraulic and Fluid Power Systems - SAIT
-           - Welding (Oxyacetylene,MIG,Arc) - Highschool
-           - Lathe - SAIT
-           - Drill Press - SAIT
-           - Automatics - Highschool/Self Taught
+         - Hydraulic and Fluid Power Systems
+         - Welding (Oxyacetylene,MIG,Arc)
+         - Lathe
+         - Drill Press
+         - Automatics
