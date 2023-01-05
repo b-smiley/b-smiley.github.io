@@ -18,7 +18,7 @@ description: A showcasing of Brendan's engineering skills
   - Automated System that checks for new company sales and delivers the customer their purchased files.
   - VBA Excel Data Extraction tool for a customer.
   - Fusion 360 API 2D Sketch importer.
-  - Python Zombie Survival Game.
+  - [Python Zombie Survival Game](https://github.com/b-smiley/ZombieSurvival).
   - Sudoko Solver
 
 ## Mechanical Engineering Projects
