@@ -2,7 +2,6 @@
 layout: default
 title: Brendan Smiley's Portfolio
 description: A showcasing of Brendan's engineering skills
-google_analytics: G-LJTYY17LYN
 ---
 
 ## About Me
@@ -17,9 +16,10 @@ google_analytics: G-LJTYY17LYN
 
 ## Software Development Projects
 * * *
-  - Automated System that checks for new company sales and delivers the customer their purchased files.
+  - Automated System that checks for new company sales and delivers the customer their purchased files.  
   - VBA Excel Data Extraction tool for a customer.
   - Fusion 360 API 2D Sketch importer.
+  - [VBA Word To PDF Time Saver](https://github.com/b-smiley/WordToPDF-AutomationTool)
   - [Python Zombie Survival Game](https://github.com/b-smiley/ZombieSurvival).
   - Sudoko Solver
 
