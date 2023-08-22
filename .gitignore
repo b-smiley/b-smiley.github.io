@@ -1,3 +1,5 @@
+Scripts/
+.vscode/
 # Logs
 logs
 *.log
