@@ -12,6 +12,7 @@ import Showcase from "../../pages/Showcase/Showcase";
 // Components and Styles
 import "./MainFrame.scss";
 import NavigationBar from "../NavigationBar/NavigationBar";
+import Footer from "../Footer";
 
 // TODO make individual pages for each of these
 
@@ -28,6 +29,7 @@ const MainFrame: React.FC<MainFrameProps> = (props) => {
   return (
     <div className="MainFrame">
       <NavigationBar navItems={navItems} />
+      <Footer />
     </div>
   );
 };

@@ -1,9 +1,10 @@
 import React from "react";
+
 import "./Skills.scss";
 import CardGrid from "../../components/CardGrid";
 interface SkillsProps {}
 const Skills: React.FC<SkillsProps> = (props) => {
-  const cards = [
+  const softwareCards = [
     {
       id: 1,
       title: "Languages",
@@ -14,6 +15,7 @@ const Skills: React.FC<SkillsProps> = (props) => {
             <li>TypeScript</li>
             <li>VBA</li>
             <li>Arduino C</li>
+            <li>LabVIEW</li>
           </ul>
         </div>
       ),
@@ -48,16 +50,47 @@ const Skills: React.FC<SkillsProps> = (props) => {
     },
   ];
 
+  const mechanicalCards = [
+    {
+      id: 1,
+      title: "CAD",
+      content: (
+        <div>
+          <ul>
+            <li>Solidworks</li>
+            <li>Fusion 360</li>
+            <li>VX Model</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      id: 2,
+      title: "3D Technologies",
+      content: (
+        <div>
+          <ul>
+            <li>3D Scanning</li>
+            <li>3D Printing</li>
+            <li>3D Modeling</li>
+            <li>CAD Simulations</li>
+            <li>3D Software Development</li>
+          </ul>
+        </div>
+      ),
+    },
+  ];
+
   return (
     <div className="Skills">
       <div id="software-section">
         <h1>Software</h1>
-        <CardGrid cards={cards} />
+        <CardGrid cards={softwareCards} />
       </div>
 
       <div id="mechanical-section">
         <h1>Mechanical</h1>
-        <CardGrid cards={cards} />
+        <CardGrid cards={mechanicalCards} />
       </div>
     </div>
   );
