@@ -19,7 +19,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ navItems }) => {
       <BrowserRouter>
         <nav className="NavigationBar">
           {navItems.map((item, index) => (
-            <div key={index}>
+            <div className={"nav-link"} key={index}>
               <Link to={item.path}>{item.label}</Link>
             </div>
           ))}

@@ -1,2 +1,2 @@
-import ModelRenderer from './ModelRenderer';
+import ModelRenderer from "./ModelRenderer";
 export default ModelRenderer;

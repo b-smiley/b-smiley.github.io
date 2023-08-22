@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Skills.scss";
+
 import CardGrid from "../../components/CardGrid";
 interface SkillsProps {}
 const Skills: React.FC<SkillsProps> = (props) => {
@@ -91,6 +92,8 @@ const Skills: React.FC<SkillsProps> = (props) => {
       <div id="mechanical-section">
         <h1>Mechanical</h1>
         <CardGrid cards={mechanicalCards} />
+        {/* TODO fix this spacer div with fix height*/}
+        <div style={{ height: "70px" }}></div>
       </div>
     </div>
   );
