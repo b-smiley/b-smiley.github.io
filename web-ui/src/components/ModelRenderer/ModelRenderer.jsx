@@ -1,5 +1,6 @@
-import React from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { useThree } from "@react-three/fiber";
 import {
   useGLTF,
   Stage,
@@ -22,23 +23,38 @@ interface ModelRendererProps {
   filePath: string;
 }
 const ModelRenderer: React.FC<ModelRendererProps> = ({ filePath }) => {
+  const controlsRef = useRef();
+
+  const handleControlsChange = () => {
+    if (controlsRef.current) {
+      controlsRef.current.target.copy(controlsRef.current.target);
+    }
+  };
   return (
     <div className="ModelRenderer">
       <Canvas
         dpr={[1, 2]}
-        shadows
         camera={{ fov: 45 }}
-        style={{ position: "absolute", width: "100%", height: "400px" }}
+        style={{ position: "absolute", width: "100%", height: "250px" }}
       >
-        <color attach="background" args={["#b2b2b2"]} />
-        <OrbitControls />
+        <color attach="background" args={["#dbdbdb"]} />
+        <OrbitControls
+          target={[0, 0, 0]}
+          ref={controlsRef}
+          onChange={handleControlsChange}
+        />
 
-        <PresentationControls speed={1.5} global zoom={0.3}>
-          <Stage environment={"city"}>
+        <PresentationControls >
+          <Stage 
+          environment={"city"}
+          shadows={false}
+          >
             <Model scale={0.01} filePath={filePath} />
           </Stage>
         </PresentationControls>
       </Canvas>
+      {/* Add a empty div as a spacer TODO fix this */}
+      <div style={{ height: "250px" }}></div>
     </div>
   );
 };
