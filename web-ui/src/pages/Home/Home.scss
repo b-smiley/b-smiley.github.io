@@ -1,3 +1,57 @@
+@import "../../App.scss";
 .Home {
-// Define your styles here
+    .intro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .name{
+                font-size: 50px;
+                font-weight: bold;
+                color: $main-text-color;
+                text-align: center;
+                // Gradient the text
+                background: linear-gradient(90deg, #00c3ff, #6bed9d);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        
+            .title {
+                font-family: monospace;
+                color:#0000;
+                background:
+                  linear-gradient(-90deg,$accent-1 4px,#0000 0) 10px 0,
+                  linear-gradient($accent-1 0 0) 0 0;
+                background-size:calc(var(--n)*1ch) 200%;
+                -webkit-background-clip:padding-box,text;
+                background-clip:padding-box,text;
+                background-repeat:no-repeat;
+                animation: 
+                  b 1.6s infinite steps(1),   
+                  t calc(var(--n)*.1s) steps(var(--n)) forwards;
+              }
+              @keyframes t{
+                from {background-size:0 200%}
+              }
+              @keyframes b{
+                50% {background-position:0 -100%,0 0}
+            }
+
+            .typing-space{
+                font-family: monospace;
+                font-weight: 700;
+                font-size: 1.7rem;
+                padding:20px;
+            }
+            
+    }
+    
+    .about{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: $main-text-color;
+        text-align: center;
+    }
 }

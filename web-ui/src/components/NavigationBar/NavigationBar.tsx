@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
 
 import "./NavigationBar.scss";
-import Home from "../../pages/Home";
 
 interface NavItem {
   label: string;
@@ -20,9 +19,9 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ navItems }) => {
       <BrowserRouter>
         <nav className="NavigationBar">
           {navItems.map((item, index) => (
-            <div className={"nav-link"} key={index}>
-              <Link to={item.path}>{item.label}</Link>
-            </div>
+            <Link className={"nav-link"} key={index} to={item.path}>
+              {item.label}
+            </Link>
           ))}
         </nav>
         <div className="Content">

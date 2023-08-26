@@ -1,6 +1,5 @@
-import React, { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { useThree } from "@react-three/fiber";
+import React from "react";
+import { Canvas } from "@react-three/fiber";
 import {
   useGLTF,
   Stage,
@@ -23,13 +22,7 @@ interface ModelRendererProps {
   filePath: string;
 }
 const ModelRenderer: React.FC<ModelRendererProps> = ({ filePath }) => {
-  const controlsRef = useRef();
-
-  const handleControlsChange = () => {
-    if (controlsRef.current) {
-      controlsRef.current.target.copy(controlsRef.current.target);
-    }
-  };
+  
   return (
     <div className="ModelRenderer">
       <Canvas
@@ -40,8 +33,6 @@ const ModelRenderer: React.FC<ModelRendererProps> = ({ filePath }) => {
         <color attach="background" args={["#dbdbdb"]} />
         <OrbitControls
           target={[0, 0, 0]}
-          ref={controlsRef}
-          onChange={handleControlsChange}
         />
 
         <PresentationControls >

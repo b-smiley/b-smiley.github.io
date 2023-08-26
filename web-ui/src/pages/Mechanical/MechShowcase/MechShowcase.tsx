@@ -24,13 +24,7 @@ const MechShowcase: React.FC<MechShowcaseProps> = (props) => {
             The first class was to create the CAD model for the engine, while the other class was to fabricate it. 
             More specifically, we fabricated the Stirling Engine using Lathes and CNC machines.
             "
-            skills={[
-              "3D Scanning",
-              "3D Printing",
-              "3D Modeling",
-              "CAD Simulations",
-              "3D Software Development",
-            ]}
+            skills={["3D Modeling", "CAD Assembly", "Manufacturing Processes"]}
             through={["SAIT", "SolidWorks"]}
           />
         </div>

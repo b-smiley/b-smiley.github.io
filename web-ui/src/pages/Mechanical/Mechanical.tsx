@@ -40,6 +40,8 @@ const Mechanical: React.FC<MechanicalProps> = (props) => {
     <div className="Mechanical">
       {/* Info Section */}
       <h1>Mechanical Experiences</h1>
+      {/* TODO make a introduction like why you like mechanical what you have learnt etc. */}
+
       {/* Showcase Section */}
       <MechShowcase></MechShowcase>
       {/* Skills Section */}

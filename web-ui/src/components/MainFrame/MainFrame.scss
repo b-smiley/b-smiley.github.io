@@ -1,3 +1,6 @@
 .MainFrame {
-// Define your styles here
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
 }

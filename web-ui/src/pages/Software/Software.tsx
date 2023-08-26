@@ -55,8 +55,10 @@ const Software: React.FC<SoftwareProps> = (props) => {
       <h1>Software Experiences</h1>
 
       {/* Showcase Section */}
+      <h1>Showcase</h1>
 
       {/* Skills Section */}
+      <h1>Skills</h1>
       <CardGrid cards={cards} />
     </div>
   );
