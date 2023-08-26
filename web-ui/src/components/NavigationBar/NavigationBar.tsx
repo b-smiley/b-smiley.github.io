@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
 
 import "./NavigationBar.scss";
+import Home from "../../pages/Home";
 
 interface NavItem {
   label: string;
@@ -34,6 +35,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ navItems }) => {
                 element={<item.component />}
               />
             ))}
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
       </BrowserRouter>
