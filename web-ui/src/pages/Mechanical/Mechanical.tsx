@@ -12,9 +12,9 @@ const Mechanical: React.FC<MechanicalProps> = (props) => {
       content: (
         <div>
           <ul>
-            <li>Solidworks</li>
-            <li>Fusion 360</li>
-            <li>VX Model</li>
+            <li id="solidworks">Solidworks</li>
+            <li id="fusion360">Fusion 360</li>
+            <li id="vxmodel">VX Model</li>
           </ul>
         </div>
       ),
@@ -25,11 +25,24 @@ const Mechanical: React.FC<MechanicalProps> = (props) => {
       content: (
         <div>
           <ul>
-            <li>3D Scanning</li>
-            <li>3D Printing</li>
-            <li>3D Modeling</li>
-            <li>CAD Simulations</li>
-            <li>3D Software Development</li>
+            <li id="3dscanning">3D Scanning</li>
+            <li id="3dprinting">3D Printing</li>
+            <li id="3dmodeling">3D Modeling</li>
+            <li id="cadsimulations">CAD Simulations</li>
+            <li id="3dcadprogramming">3D CAD Programming</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      id: 3,
+      title: "Manufacturing Processes",
+      content: (
+        <div>
+          <ul>
+            <li id="cnc">CNC</li>
+            <li id="lathes">Lathes</li>
+            <li id="3dprinting">3D Printing</li>
           </ul>
         </div>
       ),
@@ -38,15 +51,11 @@ const Mechanical: React.FC<MechanicalProps> = (props) => {
 
   return (
     <div className="Mechanical">
-      {/* Info Section */}
-      <h1>Mechanical Experiences</h1>
-      {/* TODO make a introduction like why you like mechanical what you have learnt etc. */}
-
       {/* Showcase Section */}
       <MechShowcase></MechShowcase>
       {/* Skills Section */}
       <h1>Skills</h1>
-      <CardGrid cards={cards} cardsPerRow={2} />
+      <CardGrid cards={cards} cardsPerRow={[1, 3]} />
     </div>
   );
 };

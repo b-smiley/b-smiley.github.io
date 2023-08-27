@@ -59,7 +59,7 @@ const Software: React.FC<SoftwareProps> = (props) => {
 
       {/* Skills Section */}
       <h1>Skills</h1>
-      <CardGrid cards={cards} cardsPerRow={3} />
+      <CardGrid cards={cards} cardsPerRow={[1, 3]} />
     </div>
   );
 };

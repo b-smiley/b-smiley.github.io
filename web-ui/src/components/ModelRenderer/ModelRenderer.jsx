@@ -18,7 +18,7 @@ function Model({ filePath, ...props }) {
   return <primitive object={scene} {...props} />;
 }
 
-const ModelRenderer = ({ filePath, fullScreen=false, fullScreenDescription="" }) => {
+const ModelRenderer = ({ filePath, fullScreen=false,  }) => {
   const [allowOrbit, setAllowOrbit] = useState(true);
   const [isFullScreen, setIsFullScreen] = useState(fullScreen);
 
@@ -53,14 +53,14 @@ const ModelRenderer = ({ filePath, fullScreen=false, fullScreenDescription="" })
   };
 
   // Change the height depending on card or fullscreen
-  const height = isFullScreen ? "90vh" : "250px";
+  const height = isFullScreen ? "100vh" : "400px";
 
   return (
     <div className="ModelRenderer">
       <Canvas
         dpr={[1, 2]}
         camera={{ fov: 45 }}
-        style={{ position: "absolute", width: "100%", height: height }}
+        style={{ position: "absolute", width: "100%", height: height, borderRadius: "4px" }}
       >
         <Suspense fallback={null}>
         <color attach="background" args={["#dbdbdb"]} />
@@ -84,9 +84,7 @@ const ModelRenderer = ({ filePath, fullScreen=false, fullScreenDescription="" })
       <Loader />
       {/* Display different information depending on if it is fullscreen */}
       {isFullScreen ? (
-        <div>
-          <p>Deeper Description: {fullScreenDescription}</p>
-        </div>
+        <></>
       ) : (
         <div>
           {/* Add a spacer same size as canvas  */}

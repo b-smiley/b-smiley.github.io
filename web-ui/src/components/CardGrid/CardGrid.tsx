@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CardGrid.scss";
-
+import deviceType from "../../utils/windowSize";
 interface Card {
   id: number;
   title: string;
@@ -10,16 +10,43 @@ interface Card {
 
 interface CardGridProps {
   cards: Card[];
-  cardsPerRow?: number | string;
+  cardsPerRow?: [mobile: number, desktop: number] | string; // For mobile and desktop
 }
-const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
-  const [columns, setColumns] = useState(1);
+const CardGrid: React.FC<CardGridProps> = ({ cards, cardsPerRow = "" }) => {
+  const [columns, setColumns] = useState<string | number>("");
+  const gridColumnTemplate = `repeat(${columns}, 1fr)`;
 
-  // We want to change the number of columns based on the screen size
-  // We also want to the user of this component to be able to specify the number of columns for each screen size
+  // Get the inital device size and set the columns
+  useEffect(() => {
+    if (!cardsPerRow) {
+      setColumns("auto-fill");
+      return;
+    }
+    if (deviceType() === "mobile") {
+      setColumns(cardsPerRow[0]);
+    } else {
+      setColumns(cardsPerRow[1]);
+    }
+  }, []);
+
+  // Listen for window resizing and change the columns
+  useEffect(() => {
+    const handleResize = () => {
+      if (deviceType() === "mobile") {
+        setColumns(cardsPerRow[0]);
+      } else {
+        setColumns(cardsPerRow[1]);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
-    <div className="card-grid">
+    <div
+      className="card-grid"
+      style={{ gridTemplateColumns: gridColumnTemplate }}
+    >
       {cards.map((card) => (
         <div className={`Card ${card.className || "card"}`} key={card.id}>
           <h2 className={"card-title"}>{card.title}</h2>

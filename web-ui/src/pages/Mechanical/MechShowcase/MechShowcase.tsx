@@ -8,11 +8,11 @@ import ToolTip from "../../../components/ToolTip";
 interface MechShowcaseProps {}
 const MechShowcase: React.FC<MechShowcaseProps> = (props) => {
   const modelCards = [
-    {
-      id: 1,
-      title: "3D Scanning",
-      content: <div>3D Scanning</div>,
-    },
+    // {
+    //   id: 1,
+    //   title: "3D Scanning",
+    //   content: <div>3D Scanning</div>,
+    // },
     {
       id: 2,
       title: "Stirling Engine",
@@ -26,7 +26,13 @@ const MechShowcase: React.FC<MechShowcaseProps> = (props) => {
             The first class was to create the CAD model for the engine, while the other class was to fabricate it. 
             More specifically, we fabricated the Stirling Engine using Lathes and CNC machines.
             "
-            skills={["3D Modeling", "CAD Assembly", "Manufacturing Processes"]}
+            skills={{
+              "3D Modeling": ["3dmodeling", "3D Modeling"],
+              "CAD Assembly": ["3dmodeling", "3D Modeling"],
+              Lathe: ["lathes", "Lathes"],
+              CNC: ["cnc", "CNC"],
+              Thermodynamics: ["thermodynamics", "Thermodynamics"],
+            }}
             through={["SAIT", "SolidWorks"]}
           />
         </div>
@@ -57,10 +63,9 @@ const MechShowcase: React.FC<MechShowcaseProps> = (props) => {
     <div className="MechShowcase">
       <div className="section-header">
         <h1>Showcase</h1>
-        <ToolTip content={<div>Put fun photos here!</div>}></ToolTip>
       </div>
 
-      <CardGrid cards={modelCards} />
+      <CardGrid cards={modelCards} cardsPerRow={[1, 2]} />
     </div>
   );
 };

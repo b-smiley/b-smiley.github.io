@@ -1,10 +1,11 @@
 import React from "react";
 import "./InfoCard.scss";
+import HighlightLink from "../HighlightLink";
 interface InfoCardProps {
   subTitle: string;
   description: string;
   photo?: string;
-  skills: string[];
+  skills: { [key: string]: string[] };
   through: string[];
 }
 
@@ -25,15 +26,6 @@ const InfoCard: React.FC<InfoCardProps> = ({
       </div>
       <div className="InfoCard__description">{description}</div>
       <div className="InfoCard__photo">{photo}</div>
-      <div className="InfoCard__skills">
-        {/* Reference to skills used in this project */}
-        <h4>Skills:</h4>
-        <ul>
-          {skills.map((skill) => (
-            <li>{skill}</li>
-          ))}
-        </ul>
-      </div>
       <div className="InfoCard__through">
         {/* Reference to thoughs who this project was through */}
         <h4>Through:</h4>
@@ -42,6 +34,21 @@ const InfoCard: React.FC<InfoCardProps> = ({
             <li>{through}</li>
           ))}
         </ul>
+        <div className="InfoCard__skills">
+          <h4>Skills</h4>
+          {/* Reference to skills used in this project */}
+          <ol className="InfoCard__skills__list">
+            {Object.keys(skills).map((skill) => (
+              <li>
+                <HighlightLink
+                  to={skills[skill][0]}
+                  text={skill}
+                  highlight={skills[skill][1]}
+                />
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </div>
   );
