@@ -12,9 +12,31 @@
                 color: $main-text-color;
                 text-align: center;
                 // Gradient the text
-                background: linear-gradient(90deg, #00c3ff, #6bed9d);
+                background: linear-gradient(90deg, #6bed9d, #a394f8);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+
+                // Animate the Gradient to move
+                background-size: 200% auto;
+                animation: moveGradient 10s linear infinite;
+
+                @keyframes moveGradient {
+                  0%, 100% {
+                    background-position: 0% 50%;
+                }
+                10% {
+                    background-position: 0% 50%;
+                }
+                45% {
+                    background-position: 100% 50%;
+                }
+                70% {
+                    background-position: 100% 50%;
+                }
+                90% {
+                    background-position: 0% 50%;
+                }
+                }
             }
         
             .title {

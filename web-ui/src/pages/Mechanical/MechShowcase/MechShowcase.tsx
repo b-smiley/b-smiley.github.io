@@ -3,6 +3,8 @@ import "./MechShowcase.scss";
 import CardGrid from "../../../components/CardGrid";
 import ModelRenderer from "../../../components/ModelRenderer";
 import InfoCard from "../../../components/InfoCard";
+import ToolTip from "../../../components/ToolTip";
+
 interface MechShowcaseProps {}
 const MechShowcase: React.FC<MechShowcaseProps> = (props) => {
   const modelCards = [
@@ -53,7 +55,11 @@ const MechShowcase: React.FC<MechShowcaseProps> = (props) => {
   ];
   return (
     <div className="MechShowcase">
-      <h1>Showcase</h1>
+      <div className="section-header">
+        <h1>Showcase</h1>
+        <ToolTip content={<div>Put fun photos here!</div>}></ToolTip>
+      </div>
+
       <CardGrid cards={modelCards} />
     </div>
   );

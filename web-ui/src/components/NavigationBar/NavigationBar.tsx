@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
 
 import "./NavigationBar.scss";
+import FullScreenModel from "../../pages/FullScreenModel";
 
 interface NavItem {
   label: string;
@@ -34,6 +35,8 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ navItems }) => {
                 element={<item.component />}
               />
             ))}
+            {/* Non-Nav Bar Routes */}
+            <Route path="/model-viewer" element={<FullScreenModel />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>

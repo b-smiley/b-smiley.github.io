@@ -12,6 +12,7 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import Footer from "../Footer";
 import Mechanical from "../../pages/Mechanical";
 import Software from "../../pages/Software";
+import FullScreenModel from "../../pages/FullScreenModel";
 
 // TODO make individual pages for each of these
 
@@ -24,6 +25,12 @@ const MainFrame: React.FC<MainFrameProps> = (props) => {
     { label: "Software", path: "/software", component: Software },
   ];
 
+  // If current route is model-viewer then show the model-viewer only
+  if (window.location.pathname === "/model-viewer") {
+    return <FullScreenModel />;
+  }
+
+  // All other routes show the main frame
   return (
     <div className="MainFrame">
       <NavigationBar navItems={navItems} />

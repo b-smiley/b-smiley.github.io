@@ -1,3 +1,4 @@
+@import "../../App.scss";
 // General
 .card-grid {
     display: grid;
@@ -7,8 +8,8 @@
   }
   
   .card {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
+    background-color: $dark-card-background;
+    border: 1px solid $accent-1;
     padding: 20px;
     border-radius: 8px;
     display:flex;

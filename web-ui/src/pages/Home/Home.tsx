@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.scss";
+import deviceType from "../../utils/windowSize";
 interface HomeProps {}
 const Home: React.FC<HomeProps> = (props) => {
   const experience = new Date().getFullYear() - 2019;
 
+  const [nameSize, setNameSize] = useState("");
+  // Get the inital device size
+  useEffect(() => {
+    if (deviceType() === "mobile") {
+      setNameSize("45px");
+    } else {
+      setNameSize("50px");
+    }
+  }, []);
+
+  // Listen for  window resizing and change the font size of the name
+  useEffect(() => {
+    const handleResize = () => {
+      if (deviceType() === "mobile") {
+        setNameSize("45px");
+      } else {
+        setNameSize("50px");
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="Home">
       <div className="intro">
-        <div className="name">
+        <div className="name" style={{ fontSize: nameSize }}>
           <h1>Brendan Smiley</h1>
         </div>
         {/* Set the style to "--n:53" */}

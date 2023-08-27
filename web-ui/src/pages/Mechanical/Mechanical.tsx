@@ -46,7 +46,7 @@ const Mechanical: React.FC<MechanicalProps> = (props) => {
       <MechShowcase></MechShowcase>
       {/* Skills Section */}
       <h1>Skills</h1>
-      <CardGrid cards={cards} />
+      <CardGrid cards={cards} cardsPerRow={2} />
     </div>
   );
 };

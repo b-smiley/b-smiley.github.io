@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./CardGrid.scss";
 
 interface Card {
@@ -10,8 +10,14 @@ interface Card {
 
 interface CardGridProps {
   cards: Card[];
+  cardsPerRow?: number | string;
 }
 const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
+  const [columns, setColumns] = useState(1);
+
+  // We want to change the number of columns based on the screen size
+  // We also want to the user of this component to be able to specify the number of columns for each screen size
+
   return (
     <div className="card-grid">
       {cards.map((card) => (
