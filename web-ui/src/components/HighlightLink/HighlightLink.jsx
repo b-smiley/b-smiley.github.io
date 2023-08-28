@@ -1,4 +1,3 @@
-import React from "react";
 import "./HighlightLink.scss";
 import { Link } from "react-scroll";
 import Highlighter from "react-highlight-words";

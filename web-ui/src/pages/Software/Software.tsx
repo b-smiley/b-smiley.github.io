@@ -1,6 +1,7 @@
 import React from "react";
 import "./Software.scss";
 import CardGrid from "../../components/CardGrid";
+import SoftShowCase from "./SoftShowCase";
 interface SoftwareProps {}
 const Software: React.FC<SoftwareProps> = (props) => {
   const cards = [
@@ -51,12 +52,9 @@ const Software: React.FC<SoftwareProps> = (props) => {
 
   return (
     <div className="Software">
-      {/* Info Section */}
-      <h1>Software Experiences</h1>
-
       {/* Showcase Section */}
       <h1>Showcase</h1>
-
+      <SoftShowCase />
       {/* Skills Section */}
       <h1>Skills</h1>
       <CardGrid cards={cards} cardsPerRow={[1, 3]} />

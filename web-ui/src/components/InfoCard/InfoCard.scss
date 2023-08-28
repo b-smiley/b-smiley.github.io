@@ -4,41 +4,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .InfoCard__skills{
-        overflow: hidden;
-        // Centering the list
-        margin: 0 auto;
+
+    .InfoCard__through{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-    }
-    .InfoCard__skills__list{
-        list-style: none;
-        padding: 0;
-        display: flex;
-        flex-direction: row-reverse;
-        position: relative;
-        /*
-        Animate the list to move from left to right, 
-        when the first element reachs the end of the viewable area, make it go back to the left
-        */
-        animation: move 10s  linear infinite;
-        @keyframes move{
-            0%{
-                left: 0;
-            }
-            100%{
-                left: -100%;
-            }
-        }
-        
-        
 
+        .InfoCard__through__list{
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            justify-items: center;
+
+        }
         li{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            list-style: none;
             margin: 0 10px;
             padding: 10px;
             background-color: $main-background;
@@ -46,13 +28,44 @@
             border-radius: 5px;
             // Have text in single line
             white-space: nowrap;
-
-            
         }
+        
+    }
 
-        // Ensure that the animation is paused when the user hovers over the list
-        &:hover{
-            animation-play-state: paused;
+
+    .InfoCard__skills{
+        // Centering the list
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .InfoCard__skills__list{
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            background-color: $main-background;
+            color: $accent-1;
+            border-radius: 5px;
+            // Have text in single line
+            white-space: nowrap;
+        }
+        li:hover{
+            background-color: $accent-1;
+            color: $main-background;
+            cursor: pointer;
+        }
+        li:active{
+            background-color: $accent-1;
+            color: $main-background;
         }
 
     }

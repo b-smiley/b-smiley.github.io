@@ -6,7 +6,7 @@ interface InfoCardProps {
   description: string;
   photo?: string;
   skills: { [key: string]: string[] };
-  through: string[];
+  through?: string[];
 }
 
 /*
@@ -17,7 +17,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
   description,
   photo = "",
   skills,
-  through,
+  through = [],
 }) => {
   return (
     <div className="InfoCard">
@@ -26,29 +26,32 @@ const InfoCard: React.FC<InfoCardProps> = ({
       </div>
       <div className="InfoCard__description">{description}</div>
       <div className="InfoCard__photo">{photo}</div>
-      <div className="InfoCard__through">
-        {/* Reference to thoughs who this project was through */}
-        <h4>Through:</h4>
-        <ul>
-          {through.map((through) => (
-            <li>{through}</li>
+      {through.length > 0 && (
+        <div className="InfoCard__through">
+          {/* Reference to thoughs who this project was through */}
+          <h4>Through</h4>
+          <ul className="InfoCard__through__list">
+            {through.map((through) => (
+              <li>{through}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <div className="InfoCard__skills">
+        <h4>Skills</h4>
+        {/* Reference to skills used in this project */}
+        <ul className="InfoCard__skills__list">
+          {Object.keys(skills).map((skill) => (
+            <li>
+              {/* TODO fix the highlighted skills */}
+              <HighlightLink
+                to={skills[skill][0]}
+                text={skill}
+                highlight={skills[skill][1]}
+              />
+            </li>
           ))}
         </ul>
-        <div className="InfoCard__skills">
-          <h4>Skills</h4>
-          {/* Reference to skills used in this project */}
-          <ol className="InfoCard__skills__list">
-            {Object.keys(skills).map((skill) => (
-              <li>
-                <HighlightLink
-                  to={skills[skill][0]}
-                  text={skill}
-                  highlight={skills[skill][1]}
-                />
-              </li>
-            ))}
-          </ol>
-        </div>
       </div>
     </div>
   );
