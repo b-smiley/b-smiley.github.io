@@ -103,9 +103,9 @@ const ModelRenderer = ({ filePath, scale ,fullScreen=false,  }) => {
         <div>
           {/* Add a spacer same size as canvas  */}
           <div style={{ height: height }}></div>
-          <button className="fullscreen-button" onClick={enterFullScreen}>
+          {/* TODO fix <button className="fullscreen-button" onClick={enterFullScreen}>
             Fullscreen
-          </button>
+          </button> */}
         </div>
       )}
     </div>
