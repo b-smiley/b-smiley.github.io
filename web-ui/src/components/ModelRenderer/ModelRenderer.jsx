@@ -68,11 +68,20 @@ const ModelRenderer = ({ filePath, scale ,fullScreen=false,  }) => {
         <Suspense fallback={null}>
         <color attach="background" args={["#dbdbdb"]} />
         <OrbitControls
-        enabled={allowOrbit}
-        // Prevent the user from zooming out too far
-        // TOOD Auto rotate the model if the user has not scrolled and not in fullscreen
-        // autoRotate={true}
+
+          enabled={allowOrbit}
+        // Disable zooming, panning and rotating 
+        // if the user is not interacting with the scene
+        // enableZoom = {allowOrbit}
+        // enablePan = {allowOrbit}
+        // enableRotate = {allowOrbit}
+
+        
+
+        // Auto rotate the model until the user interacts with the scene
+        // autoRotate={!hasScrolled} TODO make this independant of other models
         // autoRotateSpeed={0.5}
+        
         />
 
         <PresentationControls 
@@ -103,9 +112,9 @@ const ModelRenderer = ({ filePath, scale ,fullScreen=false,  }) => {
         <div>
           {/* Add a spacer same size as canvas  */}
           <div style={{ height: height }}></div>
-          {/* TODO fix <button className="fullscreen-button" onClick={enterFullScreen}>
+          <button className="fullscreen-button" onClick={enterFullScreen}>
             Fullscreen
-          </button> */}
+          </button>
         </div>
       )}
     </div>
