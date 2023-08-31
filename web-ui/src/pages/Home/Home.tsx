@@ -45,7 +45,7 @@ const Home: React.FC<HomeProps> = (props) => {
       <div className="about">
         <h1>About Me</h1>
         <p>
-          Currently in Canada getting a Bachelors Degree in Software
+          Currently in Canada completing a Bachelors Degree in Software
           Engineering. Experienced in both software and mechanical engineering.
           Started engineering related design work {experience} years ago.
           Passionate about automating tasks that will save people time.
