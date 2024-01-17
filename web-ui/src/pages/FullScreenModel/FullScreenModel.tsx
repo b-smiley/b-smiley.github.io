@@ -44,7 +44,7 @@ const FullScreenModel: React.FC<FullScreenModelProps> = (props) => {
 
   return (
     <div className="FullScreenModel">
-      <ModelRenderer filePath={filePath} fullScreen={true} />
+      <ModelRenderer filePath={filePath} scale={0.1} fullScreen={true} />
       {showToolTip && <ToolTip content={guide} show={setShowToolTip} />}
     </div>
   );

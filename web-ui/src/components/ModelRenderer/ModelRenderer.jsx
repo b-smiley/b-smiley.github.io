@@ -16,7 +16,7 @@ function Model({ filePath, scale, ...props }) {
   return <primitive object={scene} {...props} />;
 }
 
-const ModelRenderer = ({ filePath, scale ,fullScreen=false, autoload=false}) => {
+const ModelRenderer = ({ filePath, scale = 0.1 ,fullScreen=false, autoload=false}) => {
   const [allowOrbit, setAllowOrbit] = useState(true);
   const [isFullScreen, setIsFullScreen] = useState(fullScreen);
   const [loadModel, setLoadModel] = useState(autoload);
