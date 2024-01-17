@@ -51,7 +51,6 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 10px;
             background-color: $main-background;
             color: $accent-1;
             border-radius: 5px;
@@ -67,6 +66,10 @@
             background-color: $accent-1;
             color: $main-background;
         }
+        .HighlightLink{
+            padding: 10px;
+        }
+        
 
     }
 

@@ -45,8 +45,9 @@ const InfoCard: React.FC<InfoCardProps> = ({
             <li>
               {/* TODO fix the highlighted skills */}
               <HighlightLink
+                id={skills[skill][0]}
                 to={skills[skill][0]}
-                text={skill}
+                text={skills[skill][1]}
                 highlight={skills[skill][1]}
               />
             </li>

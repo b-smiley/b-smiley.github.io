@@ -15,6 +15,7 @@ const Mechanical: React.FC<MechanicalProps> = (props) => {
             <li id="solidworks">Solidworks</li>
             <li id="fusion360">Fusion 360</li>
             <li id="vxmodel">VX Model</li>
+            <li id="reverseengineering">Reverse Engineering</li>
           </ul>
         </div>
       ),

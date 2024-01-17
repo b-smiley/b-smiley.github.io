@@ -4,7 +4,9 @@ import Highlighter from "react-highlight-words";
 
 const HighlightLink = (props) => {
   const { text, search, to } = props;
-
+  console.log("text", text);
+  console.log("search", search);
+  console.log("to", to);
   return (
     <Link
       className="HighlightLink"
