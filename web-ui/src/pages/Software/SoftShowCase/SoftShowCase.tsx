@@ -34,7 +34,7 @@ const SoftShowCase: React.FC<SoftShowCaseProps> = (props) => {
               Javascript: ["javascript", "Javascript"],
               EERD: ["eer", "EERD"],
             }}
-            through={["University of Calgary", "Database Course"]}
+            through={["UofC", "Database Course"]}
           />
         </div>
       ),
