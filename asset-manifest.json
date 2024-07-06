@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/brendansmiley.com/static/css/main.f427849b.css",
-    "main.js": "/brendansmiley.com/static/js/main.067a79d9.js",
-    "static/js/787.4c617d16.chunk.js": "/brendansmiley.com/static/js/787.4c617d16.chunk.js",
-    "index.html": "/brendansmiley.com/index.html",
-    "main.f427849b.css.map": "/brendansmiley.com/static/css/main.f427849b.css.map",
-    "main.067a79d9.js.map": "/brendansmiley.com/static/js/main.067a79d9.js.map",
-    "787.4c617d16.chunk.js.map": "/brendansmiley.com/static/js/787.4c617d16.chunk.js.map"
+    "main.css": "/static/css/main.f427849b.css",
+    "main.js": "/static/js/main.4d375d6f.js",
+    "static/js/787.720a4f32.chunk.js": "/static/js/787.720a4f32.chunk.js",
+    "index.html": "/index.html",
+    "main.f427849b.css.map": "/static/css/main.f427849b.css.map",
+    "main.4d375d6f.js.map": "/static/js/main.4d375d6f.js.map",
+    "787.720a4f32.chunk.js.map": "/static/js/787.720a4f32.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f427849b.css",
-    "static/js/main.067a79d9.js"
+    "static/js/main.4d375d6f.js"
   ]
 }
