@@ -1,7 +1,7 @@
 {
   "name": "web-ui",
-  "version": "0.1.0",
-  "homepage": "www.brendansmiley.com",
+  "version": "0.0.2",
+  "homepage": "brendansmiley.com",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.80.1",
