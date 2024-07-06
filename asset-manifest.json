@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/www.brendansmiley.com/static/css/main.f427849b.css",
-    "main.js": "/www.brendansmiley.com/static/js/main.1fb45ef5.js",
-    "static/js/787.4c617d16.chunk.js": "/www.brendansmiley.com/static/js/787.4c617d16.chunk.js",
-    "index.html": "/www.brendansmiley.com/index.html",
-    "main.f427849b.css.map": "/www.brendansmiley.com/static/css/main.f427849b.css.map",
-    "main.1fb45ef5.js.map": "/www.brendansmiley.com/static/js/main.1fb45ef5.js.map",
-    "787.4c617d16.chunk.js.map": "/www.brendansmiley.com/static/js/787.4c617d16.chunk.js.map"
+    "main.css": "/brendansmiley.com/static/css/main.f427849b.css",
+    "main.js": "/brendansmiley.com/static/js/main.067a79d9.js",
+    "static/js/787.4c617d16.chunk.js": "/brendansmiley.com/static/js/787.4c617d16.chunk.js",
+    "index.html": "/brendansmiley.com/index.html",
+    "main.f427849b.css.map": "/brendansmiley.com/static/css/main.f427849b.css.map",
+    "main.067a79d9.js.map": "/brendansmiley.com/static/js/main.067a79d9.js.map",
+    "787.4c617d16.chunk.js.map": "/brendansmiley.com/static/js/787.4c617d16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f427849b.css",
-    "static/js/main.1fb45ef5.js"
+    "static/js/main.067a79d9.js"
   ]
 }
