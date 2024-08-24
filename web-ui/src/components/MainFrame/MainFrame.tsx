@@ -2,7 +2,7 @@
 The main frame of the website. This frame has the general layout of the website.
 */
 
-import React from "react";
+import React, { Component } from "react";
 
 // Pages
 import Home from "../../pages/Home/Home";
@@ -12,6 +12,7 @@ import NavigationBar from "../NavigationBar/NavigationBar";
 import Footer from "../Footer";
 import Mechanical from "../../pages/Mechanical";
 import Software from "../../pages/Software";
+import Blog from "../../pages/Blog";
 import FullScreenModel from "../../pages/FullScreenModel";
 
 // TODO make individual pages for each of these
@@ -21,8 +22,9 @@ const MainFrame: React.FC<MainFrameProps> = (props) => {
   // Links
   const navItems = [
     { label: "Home", path: "/", component: Home },
-    { label: "Mechanical", path: "/mechanical", component: Mechanical },
     { label: "Software", path: "/software", component: Software },
+    { label: "Mechanical", path: "/mechanical", component: Mechanical },
+    { label: "Blog", path: "/blog", component: Blog },
   ];
 
   // If current route is model-viewer then show the model-viewer only
