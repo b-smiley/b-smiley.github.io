@@ -25,6 +25,12 @@ jobs:
         working-directory: web-ui/src/pages/Blog/smileysblog
         run: npm ci
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "${{github.event.pusher.email}}"
+
+
       - name: Deploy the project to GitHub Pages
         working-directory: web-ui
         run: npm run deploy
