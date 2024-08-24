@@ -22,16 +22,20 @@ NOTE: Until future implementation, run the main website on port 3000 and the blo
 
 # How to deploy
 
-`npm run deploy`
+Manual Deploy - `npm run deploy`
+GitHub Actions - Commit to Main branch for automatic deployment see [deploy.yml](.github/workflows/deploy.yml)
 
-# Future Improvements
+# Roadmap
 
-- [ ] Add a blog
+- [x] Add a blog
 - [ ] Add Googel analytics
 - [ ] Add a contact form
 - [ ] Add a employment history section with a timeline
 
 # NPM Packages Used
 
-- Three.js
+If you are looking to integrate any of these packages into your Github Page site, here is a list of some of the more challenges packages to integrate.
+
 - React
+- Three.js
+- Docusaurus
