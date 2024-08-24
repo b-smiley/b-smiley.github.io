@@ -12,7 +12,7 @@ const Blog: React.FC<BlogProps> = (props) => {
   if (process.env.NODE_ENV === "development") {
     window.location.href = "http://localhost:3001/blog";
   } else {
-    navigate("/blog");
+    window.location.href = "https://brendansmiley.com/blog";
   }
   return <div></div>;
 };

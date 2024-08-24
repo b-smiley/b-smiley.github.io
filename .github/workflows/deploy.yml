@@ -17,16 +17,14 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
+      - name: Install Main Site Dependencies
         working-directory: web-ui
         run: npm ci
+      
+      - name: Install Blog Site Dependencies
+        working-directory: web-ui/src/pages/Blog/smileysblog
+        run: npm ci
 
-      - name: Build the project
+      - name: Deploy the project to GitHub Pages
         working-directory: web-ui
-        run: npm run predeploy
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./web-ui/build
+        run: npm run deploy
