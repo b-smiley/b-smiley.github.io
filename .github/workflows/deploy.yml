@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          cd blog && npm ci
+          cd web-ui/src/pages/blog/smileysblog && npm ci
       - name: Build
         run: npm run predeploy
       - name: Deploy
