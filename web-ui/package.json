@@ -33,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:blog": "cd blog && npm run build && mv build ../build/blog"
+    "build:blog": "cd src/pages/Blog/smileysblog && npm run build && mv build ../../../../build/blog"
   },
   "eslintConfig": {
     "extends": [
