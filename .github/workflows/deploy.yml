@@ -9,18 +9,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
           node-version: '20'
+
       - name: Install dependencies
-        run: |
-          cd web-ui
-          npm ci
-      - name: Build and Deploy
-        run: npm run deploy
+        working-directory: web-ui
+        run: npm ci
+
+      - name: Build the project
+        working-directory: web-ui
+        run: npm run predeploy
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./web-ui/build
