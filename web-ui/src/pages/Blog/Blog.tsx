@@ -8,11 +8,11 @@ interface BlogProps {}
  */
 const Blog: React.FC<BlogProps> = (props) => {
   if (process.env.NODE_ENV === "development") {
-    window.location.href = "http://localhost:3001/blog";
+    //window.location.href = "http://localhost:3001/blog";
   } else {
-    window.location.href = "https://brendansmiley.com/blog";
+    //window.location.href = "https://brendansmiley.com/blog";
   }
-  return <div></div>;
+  return <div>Coming Soon ...</div>;
 };
 
 export default Blog;

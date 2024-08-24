@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '20'
 
@@ -34,3 +34,5 @@ jobs:
       - name: Deploy the project to GitHub Pages
         working-directory: web-ui
         run: npm run deploy
+        env: 
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

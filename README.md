@@ -28,7 +28,8 @@ GitHub Actions - Commit to Main branch for automatic deployment see [deploy.yml]
 # Roadmap
 
 - [x] Add a blog
-- [ ] Add Googel analytics
+- [ ] GitHub Actions deployment
+- [ ] Add Google analytics
 - [ ] Add a contact form
 - [ ] Add a employment history section with a timeline
 
