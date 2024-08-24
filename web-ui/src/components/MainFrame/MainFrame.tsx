@@ -2,7 +2,7 @@
 The main frame of the website. This frame has the general layout of the website.
 */
 
-import React, { Component } from "react";
+import React from "react";
 
 // Pages
 import Home from "../../pages/Home/Home";

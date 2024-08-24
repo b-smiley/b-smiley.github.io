@@ -1,6 +1,5 @@
 import React from "react";
 import "./Mechanical.scss";
-import InfoCard from "../../components/InfoCard";
 import MechShowcase from "./MechShowcase";
 import CardGrid from "../../components/CardGrid";
 interface MechanicalProps {}
