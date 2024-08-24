@@ -9,7 +9,7 @@ const Home: React.FC<HomeProps> = (props) => {
   // Get the inital device size
   useEffect(() => {
     if (deviceType() === "mobile") {
-      setNameSize("45px");
+      setNameSize("40px");
     } else {
       setNameSize("50px");
     }
@@ -19,7 +19,7 @@ const Home: React.FC<HomeProps> = (props) => {
   useEffect(() => {
     const handleResize = () => {
       if (deviceType() === "mobile") {
-        setNameSize("45px");
+        setNameSize("40px");
       } else {
         setNameSize("50px");
       }
@@ -37,7 +37,8 @@ const Home: React.FC<HomeProps> = (props) => {
         {/* Set the style to "--n:53" */}
         <div className="typing-space">
           <span className="title" style={{ "--n": 100 } as React.CSSProperties}>
-            Mechanical Engineering Technologist, Software Engineering Student.
+            Software Engineering Student, and Mechanical Engineering
+            Technologist.
           </span>
         </div>
       </div>
@@ -45,10 +46,16 @@ const Home: React.FC<HomeProps> = (props) => {
       <div className="about">
         <h1>About Me</h1>
         <p>
-          Currently in Canada completing a Bachelors Degree in Software
-          Engineering. Experienced in both software and mechanical engineering.
-          Started engineering related design work {experience} years ago.
-          Passionate about automating tasks that will save people time.
+          I am currently in Canada completing a bachelor's degree in Software
+          Engineering. I have industry experience and education in both software
+          and mechanical engineering. I started started engineering-related
+          design work {experience} years ago. My passion for helping solve world
+          problems has driven me to always learn and grow. I am always looking
+          for new opportunities, feel free to get in contact with me.
+        </p>
+
+        <p style={{ textAlign: "center" }}>
+          Thank you for visiting my website. Enjoy!
         </p>
       </div>
     </div>

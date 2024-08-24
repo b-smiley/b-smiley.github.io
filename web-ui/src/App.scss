@@ -7,11 +7,11 @@ $main-background: #0d1017;
 $main-text-color: #fff;
 
 // Buttons and Links
-$button-background: #71a18f;
+$button-background: #86c1c9;
 $button-color: #f1fffa;
-$button-hover-background: #2a6464;
-$button-active-background:$button-background;
-$button-hover-background-2: #d6d2d2;
+$button-hover-background: #a296f7;
+$button-active-background: $button-background;
+$button-hover-background-2: #a296f7;
 
 // Navbar
 $navbar-background: #1b202c;
@@ -23,7 +23,6 @@ $accent-1: #76f5e8;
 $dark-card-background: #232325;
 
 // TODO box-shadow: 0 4px 8px 0 rgb(236 236 236 / 20%), 0 6px 20px 0 rgb(190 190 190 / 19%);
-
 
 .App {
   display: flex;

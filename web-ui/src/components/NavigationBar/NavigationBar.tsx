@@ -16,6 +16,17 @@ interface NavigationBarProps {
 }
 
 const NavigationBar: React.FC<NavigationBarProps> = ({ navItems }) => {
+  /**
+   * Handles the user selecting a link
+   * Highlights the selected link with the active class
+   * @param e Link event
+   */
+  const handleSelected = (e: any) => {
+    const links = document.querySelectorAll(".nav-link");
+    links.forEach((link) => link.classList.remove("active-link"));
+    e.target.classList.add("active-link");
+  };
+
   return (
     <div>
       <BrowserRouter>
@@ -35,11 +46,27 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ navItems }) => {
           This website uses cookies to enhance the user experience.
         </CookieConsent>
         <nav className="NavigationBar">
-          {navItems.map((item, index) => (
-            <Link className={"nav-link"} key={index} to={item.path}>
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item, index) =>
+            item.label === "Home" ? (
+              <Link
+                className={"nav-link active-link"}
+                key={index}
+                to={item.path}
+                onClick={(item) => handleSelected(item)}
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <Link
+                className={"nav-link"}
+                key={index}
+                to={item.path}
+                onClick={(item) => handleSelected(item)}
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </nav>
         <div className="Content">
           <Routes>

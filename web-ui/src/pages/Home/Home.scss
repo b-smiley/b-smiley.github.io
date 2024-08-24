@@ -1,79 +1,105 @@
 @import "../../App.scss";
 .Home {
-    .intro{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 
-            .name{
-                font-size: 50px;
-                font-weight: bold;
-                color: $main-text-color;
-                text-align: center;
-                // Gradient the text
-                background: linear-gradient(90deg, #6bed9d, #a394f8);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-                // Animate the Gradient to move
-                background-size: 200% auto;
-                animation: moveGradient 10s linear infinite;
+    .name {
+      font-size: 50px;
+      font-weight: bold;
+      color: $main-text-color;
+      text-align: center;
+      // Gradient the text
+      background: linear-gradient(90deg, #6bedbf, #a394f8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
-                @keyframes moveGradient {
-                  0%, 100% {
-                    background-position: 0% 50%;
-                }
-                10% {
-                    background-position: 0% 50%;
-                }
-                45% {
-                    background-position: 100% 50%;
-                }
-                70% {
-                    background-position: 100% 50%;
-                }
-                90% {
-                    background-position: 0% 50%;
-                }
-                }
-            }
-        
-            .title {
-                font-family: monospace;
-                color:#0000;
-                background:
-                  linear-gradient(-90deg,$accent-1 4px,#0000 0) 10px 0,
-                  linear-gradient($accent-1 0 0) 0 0;
-                background-size:calc(var(--n)*1ch) 200%;
-                -webkit-background-clip:padding-box,text;
-                background-clip:padding-box,text;
-                background-repeat:no-repeat;
-                animation: 
-                  b 1.6s infinite steps(1),   
-                  t calc(var(--n)*.1s) steps(var(--n)) forwards;
-              }
-              @keyframes t{
-                from {background-size:0 200%}
-              }
-              @keyframes b{
-                50% {background-position:0 -100%,0 0}
-            }
+      // Animate the Gradient to move
+      background-size: 200% auto;
+      animation: moveGradient 10s linear infinite;
 
-            .typing-space{
-                font-family: monospace;
-                font-weight: 700;
-                font-size: 1.7rem;
-                padding:20px;
-            }
-            
+      @keyframes moveGradient {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        10% {
+          background-position: 0% 50%;
+        }
+        45% {
+          background-position: 100% 50%;
+        }
+        70% {
+          background-position: 100% 50%;
+        }
+        90% {
+          background-position: 0% 50%;
+        }
+      }
     }
-    
-    .about{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 20px;
-        color: $main-text-color;
-        text-align: center;
+
+    .title {
+      margin: auto 0;
+      font-family: monospace;
+      color: #0000;
+      background: linear-gradient(-90deg, $accent-1 4px, #0000 0) 10px 0,
+        linear-gradient($accent-1 0 0) 0 0;
+      background-size: calc(var(--n) * 1ch) 200%;
+      -webkit-background-clip: padding-box, text;
+      background-clip: padding-box, text;
+      background-repeat: no-repeat;
+      animation: b 1.6s infinite steps(1),
+        t calc(var(--n) * 0.065s) steps(var(--n)) forwards;
     }
+    @keyframes t {
+      from {
+        background-size: 0 200%;
+      }
+    }
+    @keyframes b {
+      50% {
+        background-position: 0 -100%, 0 0;
+      }
+    }
+
+    .typing-space {
+      font-family: monospace;
+      font-weight: 700;
+      font-size: 1.7rem;
+      padding: 20px;
+    }
+  }
+
+  .about {
+    margin: auto 0;
+    font-size: 20px;
+    color: $main-text-color;
+  }
+  .about h1 {
+    text-align: center;
+  }
+
+  .about p {
+    margin: 1rem auto;
+  }
+
+  // For mobile only use active
+  @media only screen and (max-width: 700px) {
+    .about p {
+      width: 90%;
+    }
+  }
+  // For desktop only use hover
+  @media only screen and (min-width: 700px) {
+    .about p {
+      width: 75%;
+    }
+  }
 }
