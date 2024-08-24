@@ -12,7 +12,7 @@ const Blog: React.FC<BlogProps> = (props) => {
   } else {
     //window.location.href = "https://brendansmiley.com/blog";
   }
-  return <div>Coming Soon ...</div>;
+  return <div style={{ textAlign: "center" }}>Docusaurus Coming Soon ...</div>;
 };
 
 export default Blog;
