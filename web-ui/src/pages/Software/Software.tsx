@@ -12,10 +12,14 @@ const Software: React.FC<SoftwareProps> = (props) => {
         <div>
           <ul>
             <li>Python</li>
-            <li>TypeScript</li>
+            <li>Javascript, CSS, HTML</li>
+            <li>Java</li>
+            <li>C and C++</li>
+            <li>Rust</li>
+            <li>SQL</li>
             <li>VBA</li>
-            <li>Arduino C</li>
             <li>LabVIEW</li>
+            <li>Typescript</li>
           </ul>
         </div>
       ),
