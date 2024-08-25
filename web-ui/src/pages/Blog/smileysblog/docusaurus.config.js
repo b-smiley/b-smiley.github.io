@@ -9,7 +9,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Smiley's Blog",
-  tagline: "Dinosaurs are cool",
+  tagline: "It's not a bug, it's a feature! 🐞",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -39,23 +39,22 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: "./sidebars.js",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        // docs: {
+        //   sidebarPath: "./sidebars.js",
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        // },
         blog: {
+          routeBasePath: "posts",
           showReadingTime: true,
           feedOptions: {
             type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/b-smiley/b-smiley.github.io",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -71,25 +70,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/ProfilePicture.jpg",
       navbar: {
-        title: "My Site",
+        title: "Smiley's Blog",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
         },
         items: [
+          { to: "/posts", label: "Posts", position: "left" },
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
+            href: "https://brendansmiley.com",
+            label: "Main Site",
             position: "right",
           },
         ],
@@ -98,46 +90,46 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Website",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Home",
+                href: "https://brendansmiley.com/",
+              },
+              {
+                label: "Software",
+                href: "https://brendansmiley.com/software",
+              },
+              {
+                label: "Mechanical",
+                href: "https://brendansmiley.com/mechanical",
               },
             ],
           },
           {
-            title: "Community",
+            title: "Social Media",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "LinkedIn",
+                to: "https://www.linkedin.com/in/brendan-s-9703ba193/",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "Smiley's GitHub",
+                href: "https://github.com/b-smiley",
               },
             ],
           },
           {
-            title: "More",
+            title: "Built with Docusaurus",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
+                label: "Docusaurus GitHub",
                 href: "https://github.com/facebook/docusaurus",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Brendan Smiley. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
