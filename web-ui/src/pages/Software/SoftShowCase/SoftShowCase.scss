@@ -1,20 +1,39 @@
 @import "./../../../App.scss";
 .SoftShowCase {
-    .software-card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  .software-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .link {
+    color: $accent-1;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .link:hover {
+    color: $main-text-color;
+  }
+  .card-visual {
+    margin-top: 2.2vh;
+  }
+
+  .drawio {
+    overflow: "hidden";
+  }
+
+  // For mobile
+  @media screen and (max-width: 768px) {
+    .drawio {
+      height: 300px;
     }
-    .link{
-        color: $accent-1;
-        padding: 10px;
-        border-radius: 4px;
+  }
+
+  // For desktop
+  @media screen and (min-width: 769px) {
+    .drawio {
+      width: 100%;
+      height: 700px;
     }
-    .link:hover{
-        color: $main-text-color;
-    }
-    .card-visual{
-        margin-top: 2.2vh;
-    }
+  }
 }
