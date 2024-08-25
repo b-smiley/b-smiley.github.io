@@ -1,19 +1,14 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+software:
+  label: Software Engineering
+  permalink: /software
+  description: Software Engineering topics
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+mechanical:
+  label: Mechanical Engineering
+  permalink: /mechanical
+  description: Mechanical Engineering topics
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+electrical:
+  label: Electrical Engineering
+  permalink: /electrical
+  description: Electrical Engineering topics

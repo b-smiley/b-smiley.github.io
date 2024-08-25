@@ -36,6 +36,7 @@ GitHub Actions - Commit to Main branch for automatic deployment see [deploy.yml]
 
 # Roadmap
 
+- [ ] Add more to the blog main page
 - [ ] Add a contact form
 - [ ] Add a employment history section with a timeline
 
