@@ -1,6 +1,7 @@
 ---
 slug: first-blog-post
 title: First Blog Post
+date: 2019-05-28
 authors: [slorber, yangshun]
 tags: [hola, docusaurus]
 ---

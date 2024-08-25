@@ -32,10 +32,10 @@ GitHub Actions - Commit to Main branch for automatic deployment see [deploy.yml]
 - [x] Custom Domain
 - [x] Docusaurus blog (using markdown)
 - [x] GitHub Actions deployment
+- [x] Add Google analytics
 
 # Roadmap
 
-- [ ] Add Google analytics
 - [ ] Add a contact form
 - [ ] Add a employment history section with a timeline
 

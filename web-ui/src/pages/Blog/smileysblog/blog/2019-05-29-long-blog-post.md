@@ -1,6 +1,7 @@
 ---
 slug: long-blog-post
 title: Long Blog Post
+date: 2019-05-29
 authors: yangshun
 tags: [hello, docusaurus]
 ---
