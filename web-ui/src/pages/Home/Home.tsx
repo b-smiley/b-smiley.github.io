@@ -48,10 +48,10 @@ const Home: React.FC<HomeProps> = (props) => {
         <p>
           I am currently in Canada completing a bachelor's degree in Software
           Engineering. I have industry experience and education in both software
-          and mechanical engineering. I started started engineering-related
-          design work {experience} years ago. My passion for helping solve world
-          problems has driven me to always learn and grow. I am always looking
-          for new opportunities, feel free to get in contact with me.
+          and mechanical engineering. I started engineering-related design work{" "}
+          {experience} years ago. My passion for helping solve world problems
+          has driven me to always learn and grow. I am always looking for new
+          opportunities, feel free to get in contact with me.
         </p>
 
         <p style={{ textAlign: "center" }}>
