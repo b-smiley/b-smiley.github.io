@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksmileysblog=self.webpackChunksmileysblog||[]).push([[472],{5513:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Docusaurus in React GH Pages","permalink":"/blog/posts/Adding Docusaurus Blog","unlisted":false,"date":"2024-08-25T00:00:00.000Z"}]}')}}]);

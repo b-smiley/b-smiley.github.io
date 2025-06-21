@@ -2,11 +2,242 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://brendansmiley.com/blog/posts</id>
     <title>Smiley's Blog Blog</title>
-    <updated>2024-08-25T00:00:00.000Z</updated>
+    <updated>2025-06-21T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://brendansmiley.com/blog/posts"/>
     <subtitle>Smiley's Blog Blog</subtitle>
     <icon>https://brendansmiley.com/blog/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Useful Visual Studio Code Configurations]]></title>
+        <id>https://brendansmiley.com/blog/posts/VSCodeConfigs</id>
+        <link href="https://brendansmiley.com/blog/posts/VSCodeConfigs"/>
+        <updated>2025-06-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TLDR]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/VSCodeConfigs#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
+<p>This is a quick reference for useful Visual Studio Code (VsCode) configurations that I use. It includes custom keybindings and default keybindings that I find helpful for productivity. I apologize for the lack of explanation, but I wanted to keep this as a quick reference. I hope you learn a new hotkey or configuration that you find useful.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="custom">Custom<a href="https://brendansmiley.com/blog/posts/VSCodeConfigs#custom" class="hash-link" aria-label="Direct link to Custom" title="Direct link to Custom">​</a></h2>
+<ol>
+<li>
+<p><code>CTRL + R + CTRL + R</code> to run code</p>
+<ul>
+<li>Custom Python run command. Go to keyboard shortcut settings and search for "python" to find multiple python run commands. I bind one of these to a custom hotkey to speed up my workflow.</li>
+</ul>
+</li>
+<li>
+<p><code>CTRL + ALT + ?</code> to go to definition</p>
+<ul>
+<li>Super useful for navigating code quickly. Instead of doing <code>CTRL + Click</code> to go to definition, I use this hotkey to quickly jump to the definition of a function or variable. This is especially useful in large codebases where you need to navigate through multiple files. You can combine this with <code>ALT + ←</code> and <code>ALT + →</code> to navigate through the history of definitions you have visited. <strong>These 3 hotkey combos are by far my most used hotkeys</strong>. I can understand how code is related much quicker.</li>
+</ul>
+</li>
+<li>
+<p><code>ALT + ?</code> to view definition or error message on hover</p>
+<ul>
+<li>Super useful for understanding code quickly. Anything you typically can see when you hover over it will be available with this hotkey. This can show variable types, function docstrings, warning messages, and more.</li>
+</ul>
+</li>
+<li>
+<p>Format on Save (<code>CTRL + S</code>)</p>
+<ul>
+<li>Configure in settings, search for "format on save" and enable it.</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="visual-studio-code-defaults">Visual Studio Code Defaults<a href="https://brendansmiley.com/blog/posts/VSCodeConfigs#visual-studio-code-defaults" class="hash-link" aria-label="Direct link to Visual Studio Code Defaults" title="Direct link to Visual Studio Code Defaults">​</a></h2>
+<ol>
+<li><code>Alt + ←</code> or <code>Alt + →</code> to navigate through history<!-- -->
+<ul>
+<li>Used in conjunction with <code>CTRL + ALT + ?</code> to navigate through definitions and errors. <strong>These 3 hotkeys are my most used hotkeys by far</strong>.</li>
+</ul>
+</li>
+<li><code>CTRL + 1 / 2 / 3 / 4</code> to navigate through different text editor groups</li>
+<li><code>CTRL + T</code> to switch files within the current editor group</li>
+<li><code>CTRL + Shift + P</code> to open command palette</li>
+<li><code>CTRL + D</code> get matching occurrences of selected text</li>
+<li><code>Home</code> and <code>End</code> to move to beginning and end of line</li>
+<li><code>Shift + Home</code> and <code>Shift + End</code> to select to beginning and end of line</li>
+<li><code>Shift + Alt + ↑</code> or <code>Shift + Alt + Down</code> to move line up or down</li>
+<li><code>CTRL + F</code> to find text within the file</li>
+<li><code>CTRL + SHIFT + F</code> to find text across all files<!-- -->
+<ul>
+<li>This is a must for massive codebases. Good luck finding a class's method usage without this.</li>
+</ul>
+</li>
+<li><code>CTRL + ?</code> to toggle comments<!-- -->
+<ul>
+<li>This had built-in language detection, so it will comment out the code in the language you are using. For example, in Python it will use <code>#</code>, in C++ it will use <code>//</code>, and in HTML it will use <code>&lt;!-- --&gt;</code>. Now you don't have to remember the comment syntax for each language you use!</li>
+</ul>
+</li>
+<li><code>CTRL + ←</code> or <code>CTRL + →</code> to move the cursor to the next or previous word</li>
+</ol>
+<p>I will continue to update this page with more useful configurations as I discover them. If you have any suggestions, feel free to reach out!</p>]]></content>
+        <author>
+            <name>Brendan Smiley</name>
+            <uri>https://brendansmiley.com</uri>
+        </author>
+        <category label="Software Engineering" term="Software Engineering"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using GDB to Debug C and C++]]></title>
+        <id>https://brendansmiley.com/blog/posts/GDBinCygwin</id>
+        <link href="https://brendansmiley.com/blog/posts/GDBinCygwin"/>
+        <updated>2024-09-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TLDR]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
+<p>A beginner's guides to debugging C and C++ programs. The goal of this page is to be a reference to come back to when you want to debug with GDB.
+The first few sections are more educational and provide a basic understanding of GDB and Cygwin. The later sections are more practical and provide a reference for using GDB in Cygwin.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-options">Other Options<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#other-options" class="hash-link" aria-label="Direct link to Other Options" title="Direct link to Other Options">​</a></h2>
+<p>Since originally writing this, I have found that using Visual Studio Code with
+the C/C++ extension is a <em>much</em> better option for debugging C and C++ programs.
+However, in my <em>opinion</em>, there is still a steeper learning curve to configuring C++
+in Visual Studio Code. A big reason it is harder to use for a beginner is because you have to understand how VsCode is configuring the debugger and how it is using GDB or LLDB under the hood.</p>
+<p>You might opt for cygwin to get a more basic and native experience with
+C and C++ debugging. You will also understand the Visual Studio Code debugger better if you
+start with GDB in Cygwin (VsCode uses GDB, LLDB, etc under the hood for C and C++ debugging).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="setting-up-cygwin">Setting Up Cygwin<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#setting-up-cygwin" class="hash-link" aria-label="Direct link to Setting Up Cygwin" title="Direct link to Setting Up Cygwin">​</a></h2>
+<p>What is Cygwin? <a href="https://www.cygwin.com/" target="_blank" rel="noopener noreferrer">Cygwin</a> is a Unix-like environment for Windows. It allows
+developers to have access to a more Unix-like terminal and tools. I say
+"Unix-like" because it is not a full Unix system. Cygwin uses a DLL called
+<code>cygwin1.dll</code> to interact with Windows. To have a full Unix, Linux system on your Windows machine, see
+<a href="https://docs.microsoft.com/en-us/windows/wsl/install" target="_blank" rel="noopener noreferrer">WSL</a> or <a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreferrer">Virtual Machines</a>.</p>
+<p>To set up Cygwin, you can follow the instructions on the <a href="https://www.cygwin.com/" target="_blank" rel="noopener noreferrer">Cygwin
+website</a>. The Cygwin installer is named <code>setup-x86_64.exe</code>. There are different mirrors you can select
+from, they all should provide the packages being downloaded. Continue to the download page. On the download page, there are different buttons like filters and version selections you can use to
+customize your Cygwin install. If you rerun the installer (<code>setup-x86_64.exe</code>), you can update your
+custom install. You do not need to install everything (MASSIVE DOWNLOAD!). The recommended installs for this environment setup are the following:</p>
+<ul>
+<li>Base Category:<!-- -->
+<ul>
+<li>All packages in the Base category (May be automatically selected)</li>
+</ul>
+</li>
+<li>Devel Category:<!-- -->
+<ul>
+<li>gcc-core</li>
+<li>gcc-g++</li>
+<li>clang</li>
+<li>gdb</li>
+</ul>
+</li>
+<li>Debug Category:<!-- -->
+<ul>
+<li>gdb-debuginfo</li>
+<li>gdbm-debuginfo</li>
+</ul>
+</li>
+<li>nano</li>
+</ul>
+<p>Continue the install until it is complete. You can also install other packages,
+such as <code>make</code>, <a href="https://cmake.org/" target="_blank" rel="noopener noreferrer"><code>cmake</code></a>, and <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><code>git</code></a>
+if you want to level up your development environment.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-cygwin-folder-structure">The Cygwin Folder Structure<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#the-cygwin-folder-structure" class="hash-link" aria-label="Direct link to The Cygwin Folder Structure" title="Direct link to The Cygwin Folder Structure">​</a></h2>
+<p>Just a quick note on the Cygwin folder structure. The Cygwin install will create a folder called <code>C:\cygwin64</code>. Cygwin will use its own folder structure outside of the Windows folder structure. If you want your project to exist within the Windows folder structure,
+use <code>cd C:// &amp;&amp; ls</code> to get to the root of the C drive. To get back to the Cygwin user folder, use <code>cd ~</code>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-with-gdb">Getting Started with GDB<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#getting-started-with-gdb" class="hash-link" aria-label="Direct link to Getting Started with GDB" title="Direct link to Getting Started with GDB">​</a></h2>
+<p>This section will cover a basic step-by-step example of using GDB to debug a binary executable.</p>
+<ol start="0">
+<li>
+<p>Validate installs: <code>gdb --version</code>, <code>gcc --version</code>, <code>g++ --version</code>,</p>
+</li>
+<li>
+<p>Create a simple C or C++ program to debug. For example, create a file with the following steps:</p>
+<ol>
+<li>
+<p>Create a file either with Notepad++ or with <code>nano example.cpp</code></p>
+</li>
+<li>
+<p>Write and save a simple program in the file:</p>
+<div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token macro property directive-hash" style="color:#36acaa">#</span><span class="token macro property directive keyword" style="color:#00009f">include</span><span class="token macro property" style="color:#36acaa"> </span><span class="token macro property string" style="color:#e3116c">&lt;iostream&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">main</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> a </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">5</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">int</span><span class="token plain"> b </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">cout </span><span class="token operator" style="color:#393A34">&lt;&lt;</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"Enter a number: "</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">cin </span><span class="token operator" style="color:#393A34">&gt;&gt;</span><span class="token plain"> b</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">cout </span><span class="token operator" style="color:#393A34">&lt;&lt;</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"The sum is: "</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;&lt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">a </span><span class="token operator" style="color:#393A34">+</span><span class="token plain"> b</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">&lt;&lt;</span><span class="token plain"> std</span><span class="token double-colon punctuation" style="color:#393A34">::</span><span class="token plain">endl</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">0</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p>Validate the file is saved by running <code>cat example.cpp</code> to see the contents of the file.</p>
+</li>
+<li>
+<p>Use <code>g++ -Wall -g -o example example.cpp</code> to compile the program. The <code>-Wall</code> flag enables all warnings, and the <code>-g</code> flag includes debugging information in the binary. <code>-g</code> is required for GDB to work properly.</p>
+</li>
+<li>
+<p><code>ls</code> to see the compiled binary <code>example</code> in the current directory.</p>
+</li>
+<li>
+<p>To run the program with GDB, use <code>gdb ./example -tui</code>. The <code>-tui</code> flag enables the text user interface for GDB, which is more user-friendly. You don't have to use <code>-tui</code>, but I find it significantly easier to use and closer to a Visual Studio Code experience.</p>
+</li>
+<li>
+<p>Press enter to start GDB. Once you see <code>(gdb)</code>, you are in the GDB terminal. You can use gdb terminal commands to debug the program.</p>
+</li>
+<li>
+<p><code>r</code> to run the program. If you have not set any breakpoints, it will run to completion and exit. If you want to set a breakpoint, see the next step.</p>
+</li>
+<li>
+<p><code>b 4</code> to set a breakpoint at line 4 of the source code.</p>
+</li>
+<li>
+<p><code>r</code> to run the program again. This time, it will stop at the breakpoint you set.</p>
+</li>
+<li>
+<p><code>n</code> to step to the next line of code.</p>
+</li>
+<li>
+<p><code>print a</code> to print the value of <code>a</code>. Definitely experiment with printing other types of variables and expressions. You can do pointer dereferencing, arithmetic, and more. This is extremely useful for memory management debugging. The print statement can do A LOT like math <code>print a + 6</code> or <code>print &amp;a</code>.</p>
+</li>
+<li>
+<p><code>n</code> until you enter a number. After you enter a number, it will look messy on the terminal. This happens when you use <code>std::cin</code> or <code>std::cout</code>. The terminal will show the output of the program, which can make it hard to read. You can clear the terminal with <code>CTRL + L</code> to make it easier to read.</p>
+</li>
+<li>
+<p><code>c</code> to continue running the program until it exits or hits another breakpoint.</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>That's it for the example! Now you can use the <a href="https://brendansmiley.com/blog/posts/GDBinCygwin#useful-commands">commands below</a> to debug the program. I will be adding to this section as I learn more about the GDB terminal.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="useful-commands">Useful commands<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#useful-commands" class="hash-link" aria-label="Direct link to Useful commands" title="Direct link to Useful commands">​</a></h2>
+<p>How I use a minimal C and C++ setup and useful commands. This section is for reference only and therefore the explainations are minimal. You can always search for more information on the commands you are interested in.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="compile-and-starting-in-gdb-gui">Compile and Starting in GDB GUI<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#compile-and-starting-in-gdb-gui" class="hash-link" aria-label="Direct link to Compile and Starting in GDB GUI" title="Direct link to Compile and Starting in GDB GUI">​</a></h3>
+<p>For C: <code>gcc -Wall -g -o &lt;OutputName&gt; &lt;file1.c&gt; &lt;file2.c&gt; &amp;&amp; gdb ./&lt;OutputName&gt; -tui</code></p>
+<p>For C++: <code>g++ -Wall -g -o &lt;OutputName&gt; &lt;file1.c&gt; &lt;file2.c&gt; &amp;&amp; gdb ./&lt;OutputName&gt; -tui</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="using-auto-complete">Using Auto Complete<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#using-auto-complete" class="hash-link" aria-label="Direct link to Using Auto Complete" title="Direct link to Using Auto Complete">​</a></h3>
+<p><code>tab</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="running-the-application">Running the application<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#running-the-application" class="hash-link" aria-label="Direct link to Running the application" title="Direct link to Running the application">​</a></h3>
+<p><code>press enter on GDB start</code>
+<code>r</code> for run (make sure you have breakpoints set first or it will just run)
+You can restart the program by calling <code>r</code> again</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="use-previous-command">Use Previous Command<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#use-previous-command" class="hash-link" aria-label="Direct link to Use Previous Command" title="Direct link to Use Previous Command">​</a></h3>
+<p><code>Enter</code> to run the previous command again</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="refresh-the-gui-screen">Refresh the GUI screen<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#refresh-the-gui-screen" class="hash-link" aria-label="Direct link to Refresh the GUI screen" title="Direct link to Refresh the GUI screen">​</a></h3>
+<p><code>CTRL + L</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-step-over">Next (Step Over)<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#next-step-over" class="hash-link" aria-label="Direct link to Next (Step Over)" title="Direct link to Next (Step Over)">​</a></h3>
+<p><code>n</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-into">Step Into<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#step-into" class="hash-link" aria-label="Direct link to Step Into" title="Direct link to Step Into">​</a></h3>
+<p><code>s</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="continue">Continue<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#continue" class="hash-link" aria-label="Direct link to Continue" title="Direct link to Continue">​</a></h3>
+<p><code>c</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exitquit-gdb">Exit/Quit GDB<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#exitquit-gdb" class="hash-link" aria-label="Direct link to Exit/Quit GDB" title="Direct link to Exit/Quit GDB">​</a></h3>
+<p><code>q</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="set-a-breakpoint">Set a Breakpoint<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#set-a-breakpoint" class="hash-link" aria-label="Direct link to Set a Breakpoint" title="Direct link to Set a Breakpoint">​</a></h3>
+<p><code>b &lt;classname&gt;::&lt;methodname&gt;</code> or <code>b &lt;linenumber&gt;</code> or <code>b &lt;functionName&gt;</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="changing-window-focus">Changing Window Focus<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#changing-window-focus" class="hash-link" aria-label="Direct link to Changing Window Focus" title="Direct link to Changing Window Focus">​</a></h3>
+<p><code>focus cmd</code> for repeating commands (can use mouse scroll to move source code in this mode)
+<code>focus src</code> to move the displayed source code window (can use arrow keys to move source code in this mode)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="printing">Printing<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#printing" class="hash-link" aria-label="Direct link to Printing" title="Direct link to Printing">​</a></h3>
+<p>can use <code>print(&lt;variable&gt;)</code> for a quick check
+can use <code>printf("&lt;regular c string formatter here&gt;");</code> for a more complex check</p>
+<p>Example:
+<code>print this-&gt;idM</code>
+<code>print &amp;this</code>
+<code>print a + 6</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="segmentation-fault---backtrace">Segmentation Fault - Backtrace<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#segmentation-fault---backtrace" class="hash-link" aria-label="Direct link to Segmentation Fault - Backtrace" title="Direct link to Segmentation Fault - Backtrace">​</a></h3>
+<p><code>bt</code> or <code>backtrace</code></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="references">References<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
+<p>Below are some additional references that I found useful learning GDB. Definitely check them out to learn much more!</p>
+<ul>
+<li><a href="https://www.cygwin.com/" target="_blank" rel="noopener noreferrer">Cygwin Documentation</a></li>
+<li><a href="https://www.oreilly.com/library/view/c-in-a/9781491924174/" target="_blank" rel="noopener noreferrer">C in a Nutshell by Peter Prinz &amp; Tony Crawford. Oreilly. Chapter 21: Debugging C Programs with GDB</a></li>
+<li><a href="https://ftp.gnu.org/old-gnu/Manuals/gdb/html_chapter/gdb_19.html" target="_blank" rel="noopener noreferrer">Old GNU Manual</a></li>
+</ul>]]></content>
+        <author>
+            <name>Brendan Smiley</name>
+            <uri>https://brendansmiley.com</uri>
+        </author>
+        <category label="Software Engineering" term="Software Engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Docusaurus in React GH Pages]]></title>
         <id>https://brendansmiley.com/blog/posts/Adding Docusaurus Blog</id>
