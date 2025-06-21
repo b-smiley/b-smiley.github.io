@@ -8,12 +8,13 @@
     <subtitle>Smiley's Blog Blog</subtitle>
     <icon>https://brendansmiley.com/blog/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Useful Visual Studio Code Configurations]]></title>
+        <title type="html"><![CDATA[Be More Productive in VS Code]]></title>
         <id>https://brendansmiley.com/blog/posts/VSCodeConfigs</id>
         <link href="https://brendansmiley.com/blog/posts/VSCodeConfigs"/>
         <updated>2025-06-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[TLDR]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/VSCodeConfigs#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
+        <summary type="html"><![CDATA[A reference for productive Visual Studio Code hotkeys and configurations.]]></summary>
+        <content type="html"><![CDATA[<p>A reference for productive Visual Studio Code hotkeys and configurations.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/VSCodeConfigs#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
 <p>This is a quick reference for useful Visual Studio Code (VsCode) configurations that I use. It includes custom keybindings and default keybindings that I find helpful for productivity. I apologize for the lack of explanation, but I wanted to keep this as a quick reference. I hope you learn a new hotkey or configuration that you find useful.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="custom">Custom<a href="https://brendansmiley.com/blog/posts/VSCodeConfigs#custom" class="hash-link" aria-label="Direct link to Custom" title="Direct link to Custom">​</a></h2>
 <ol>
@@ -77,14 +78,31 @@
         <category label="Software Engineering" term="Software Engineering"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Software Architecture Research Paper]]></title>
+        <id>https://brendansmiley.com/blog/posts/software-architecture-research-paper</id>
+        <link href="https://brendansmiley.com/blog/posts/software-architecture-research-paper"/>
+        <updated>2025-06-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[My Experience using LaTeX to write a research paper on software architecture.]]></summary>
+        <content type="html"><![CDATA[<p>My Experience using LaTeX to write a research paper on software architecture.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/software-architecture-research-paper#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="section">Section<a href="https://brendansmiley.com/blog/posts/software-architecture-research-paper#section" class="hash-link" aria-label="Direct link to Section" title="Direct link to Section">​</a></h2>]]></content>
+        <author>
+            <name>Brendan Smiley</name>
+            <uri>https://brendansmiley.com</uri>
+        </author>
+        <category label="Software Engineering" term="Software Engineering"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Using GDB to Debug C and C++]]></title>
         <id>https://brendansmiley.com/blog/posts/GDBinCygwin</id>
         <link href="https://brendansmiley.com/blog/posts/GDBinCygwin"/>
         <updated>2024-09-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[TLDR]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
-<p>A beginner's guides to debugging C and C++ programs. The goal of this page is to be a reference to come back to when you want to debug with GDB.
+        <summary type="html"><![CDATA[A beginner's guides to debugging C and C++ programs with GDB.]]></summary>
+        <content type="html"><![CDATA[<p>A beginner's guides to debugging C and C++ programs with GDB.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
+<p>The goal of this page is to be a reference to come back to when you want to debug with GNU Debugger (GDB).
 The first few sections are more educational and provide a basic understanding of GDB and Cygwin. The later sections are more practical and provide a reference for using GDB in Cygwin.</p>
+<div style="text-align:center"><img src="https://brendansmiley.com/blog/posts/gdb-usage.png" alt="An image for using GDB" title="An image for using GDB" style="max-width:100%;height:auto"></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-options">Other Options<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#other-options" class="hash-link" aria-label="Direct link to Other Options" title="Direct link to Other Options">​</a></h2>
 <p>Since originally writing this, I have found that using Visual Studio Code with
 the C/C++ extension is a <em>much</em> better option for debugging C and C++ programs.

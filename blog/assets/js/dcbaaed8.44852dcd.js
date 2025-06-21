@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksmileysblog=self.webpackChunksmileysblog||[]).push([[373],{1993:e=>{e.exports=JSON.parse('{"tags":[{"label":"Software Engineering","permalink":"/blog/posts/tags/software","description":"Software Engineering topics","count":3}]}')}}]);
