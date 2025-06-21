@@ -1,10 +1,14 @@
 ---
 slug: VSCodeConfigs
-title: Useful Visual Studio Code Configurations
+title: Be More Productive in VS Code
 date: 2025-6-21
 authors: smiley
 tags: [software]
 ---
+
+A reference for productive Visual Studio Code hotkeys and configurations.
+
+<!-- truncate -->
 
 ## TLDR
 
