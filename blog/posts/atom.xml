@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://brendansmiley.com/blog/posts</id>
     <title>Smiley's Blog Blog</title>
-    <updated>2025-06-21T00:00:00.000Z</updated>
+    <updated>2025-06-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://brendansmiley.com/blog/posts"/>
     <subtitle>Smiley's Blog Blog</subtitle>
     <icon>https://brendansmiley.com/blog/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Software Architecture Research Paper]]></title>
+        <id>https://brendansmiley.com/blog/posts/software-architecture-research-paper</id>
+        <link href="https://brendansmiley.com/blog/posts/software-architecture-research-paper"/>
+        <updated>2025-06-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[My Experience using LaTeX to write a research paper on software architecture.]]></summary>
+        <content type="html"><![CDATA[<p>My Experience using LaTeX to write a research paper on software architecture.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/software-architecture-research-paper#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
+<p>For my University of Calgary software architecture course, I wrote a research paper on software architecture. I used LaTeX to write the paper and found it to be a great experience. I highly recommend using LaTeX for writing research papers, because it handles almost all the formatting for you. It is also great at automatically updating if you have a massive formatting changes. I used <a href="https://www.overleaf.com/" target="_blank" rel="noopener noreferrer">Overleaf</a> to write the paper, which is a great online LaTeX editor.</p>
+<p>Please check out my <a href="https://brendansmiley.com/blog/assets/files/SENG401_ResearchPaper_BrendanSmiley-7d596708d972deddabcfcfe57082bd32.pdf" target="_blank">Research Paper</a>
+if you are interested!</p>]]></content>
+        <author>
+            <name>Brendan Smiley</name>
+            <uri>https://brendansmiley.com</uri>
+        </author>
+        <category label="Software Engineering" term="Software Engineering"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Be More Productive in VS Code]]></title>
         <id>https://brendansmiley.com/blog/posts/VSCodeConfigs</id>
@@ -78,21 +95,6 @@
         <category label="Software Engineering" term="Software Engineering"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Software Architecture Research Paper]]></title>
-        <id>https://brendansmiley.com/blog/posts/software-architecture-research-paper</id>
-        <link href="https://brendansmiley.com/blog/posts/software-architecture-research-paper"/>
-        <updated>2025-06-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[My Experience using LaTeX to write a research paper on software architecture.]]></summary>
-        <content type="html"><![CDATA[<p>My Experience using LaTeX to write a research paper on software architecture.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/software-architecture-research-paper#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="section">Section<a href="https://brendansmiley.com/blog/posts/software-architecture-research-paper#section" class="hash-link" aria-label="Direct link to Section" title="Direct link to Section">​</a></h2>]]></content>
-        <author>
-            <name>Brendan Smiley</name>
-            <uri>https://brendansmiley.com</uri>
-        </author>
-        <category label="Software Engineering" term="Software Engineering"/>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Using GDB to Debug C and C++]]></title>
         <id>https://brendansmiley.com/blog/posts/GDBinCygwin</id>
         <link href="https://brendansmiley.com/blog/posts/GDBinCygwin"/>
@@ -102,7 +104,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="tldr">TLDR<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#tldr" class="hash-link" aria-label="Direct link to TLDR" title="Direct link to TLDR">​</a></h2>
 <p>The goal of this page is to be a reference to come back to when you want to debug with GNU Debugger (GDB).
 The first few sections are more educational and provide a basic understanding of GDB and Cygwin. The later sections are more practical and provide a reference for using GDB in Cygwin.</p>
-<div style="text-align:center"><img src="https://brendansmiley.com/blog/posts/gdb-usage.png" alt="An image for using GDB" title="An image for using GDB" style="max-width:100%;height:auto"></div>
+<p><img decoding="async" loading="lazy" alt="GDB Usage" src="https://brendansmiley.com/blog/assets/images/gdb-usage-de06a3107652ea3594135cddb4ef1b21.png" width="581" height="440" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="other-options">Other Options<a href="https://brendansmiley.com/blog/posts/GDBinCygwin#other-options" class="hash-link" aria-label="Direct link to Other Options" title="Direct link to Other Options">​</a></h2>
 <p>Since originally writing this, I have found that using Visual Studio Code with
 the C/C++ extension is a <em>much</em> better option for debugging C and C++ programs.
